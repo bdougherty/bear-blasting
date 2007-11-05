@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<game>
+	<score value="100" attemptpenalty=".15" />
+	<bear acceleration="9.8" wallfriction=".65" wallrotfriction=".8" />
+	<level>
+		<item posx="250" posy="400" scale="1" />
+	</level>
+	<level>
+		<item posx="125" posy="400" scale="1" />
+		<item posx="375" posy="400" scale="1" />
+	</level>
+	<level>
+	    <item posx="70" posy="400" scale="1.0" />
+	    <item posx="280" posy="400" scale="1.0" />
+	    <item posx="175" posy="260" scale="1.0" />
+	</level>
+	<level>
+	    <item posx="360" posy="335" scale="1.0" />
+	    <item posx="260" posy="400" scale="1.0" />
+	    <item posx="455" posy="265" scale="1.0" />
+	    <item posx="370" posy="200" scale="1.0" />
+	</level>
+	<level>
+	    <item posx="95" posy="335" scale="1.0" />
+	    <item posx="45" posy="400" scale="1.0" />
+	    <item posx="160" posy="265" scale="1.0" />
+	    <item posx="400" posy="400" scale="1.0" />
+	</level>
+	<level>
+	    <item posx="405" posy="335" scale="1.0" />
+	    <item posx="330" posy="335" scale="1.0" />
+	    <item posx="125" posy="210" scale="1.0" />
+	    <item posx="200" posy="210" scale="1.0" />
+	</level>
+	<level>
+	    <item posx="375" posy="380" scale="1.9" />
+	    <item posx="375" posy="270" scale="1.3" />
+	    <item posx="375" posy="165" scale="1.0" />
+	    <item posx="375" posy="75" scale="0.8" />
+	</level>
+	<level>
+	    <item posx="425" posy="480" scale="1.2" />
+	    <item posx="75" posy="480" scale="1.2" />
+	    <item posx="75" posy="110" scale="1.2" />
+	    <item posx="430" posy="110" scale="1.2" />
+	</level>
+	<level>
+	    <item posx="100" posy="465" scale="0.9" />
+	    <item posx="240" posy="335" scale="1.0" />
+	    <item posx="240" posy="235" scale="1.3" />
+	    <item posx="240" posy="130" scale="1.0" />
+	</level>
+	<level>
+	    <item posx="115" posy="165" scale="1.0" />
+	    <item posx="115" posy="410" scale="1.0" />
+	    <item posx="240" posy="255" scale="1.0" />
+	    <item posx="365" posy="355" scale="1.0" />
+	</level>
+	<level>
+	    <item posx="250" posy="270" scale="1.0" />
+	    <item posx="250" posy="395" scale="1.0" />
+	    <item posx="110" posy="110" scale="2.0" />
+	    <item posx="385" posy="110" scale="2.0" />
+	</level>
+	<level>
+	    <item posx="100" posy="80" scale="1.3" />
+	    <item posx="415" posy="135" scale="1.0" />
+	    <item posx="415" posy="80" scale="1.0" />
+	    <item posx="250" posy="360" scale="1.0" />
+	</level>
+	<level>
+	    <item posx="60" posy="260" scale="1.0" />
+	    <item posx="115" posy="135" scale="1.0" />
+	    <item posx="250" posy="70" scale="1.0" />
+	    <item posx="250" posy="380" scale="1.0" />
+	</level>
+	<level>
+	    <item posx="240" posy="230" scale="1.0" />
+	    <item posx="320" posy="220" scale="1.0" />
+	    <item posx="240" posy="280" scale="1.0" />
+	    <item posx="320" posy="265" scale="1.0" />
+	    <item posx="240" posy="325" scale="1.0" />
+	    <item posx="235" posy="250" scale="4.3" />
+	</level>
+	<level>
+	    <item posx="205" posy="140" scale="0.5" />
+	    <item posx="385" posy="300" scale="0.5" />
+	    <item posx="95" posy="350" scale="0.5" />
+	    <item posx="215" posy="120" scale="3.0" />
+	    <item posx="385" posy="300" scale="3.0" />
+	    <item posx="115" posy="320" scale="3.1" />
+	</level>
+	<level>
+	    <item posx="250" posy="125" scale="1.0" />
+	    <item posx="145" posy="190" scale="1.0" />
+	    <item posx="55" posy="265" scale="1.0" />
+	    <item posx="440" posy="265" scale="1.0" />
+	    <item posx="355" posy="190" scale="1.0" />
+	    <item posx="110" posy="370" scale="1.0" />
+	    <item posx="390" posy="370" scale="1.0" />
+	</level>
+</game>
