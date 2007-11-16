@@ -12,6 +12,7 @@ package bear {
 		private var pAttempt:int;		// The attempt number for the current round
 		private var pAttemptPenalty:Number; // Percent to be taken off for each attempt
 		private var pBlasts:int;		// The total number of blasts
+		private var pInfoHUD:InfoHUD;	// The music information HUD
 		private var pLevel:int;			// The current level
 		private var pLevelScore:int;	// Score amassed in current level
 		private var pSalmon:int;		// The number of salmon hit
@@ -38,6 +39,9 @@ package bear {
 			bearManager = new BearManager(this, hitObjectManager);
 			soundManager = new SoundManager(this);
 
+			pInfoHUD = new InfoHUD(this, soundManager);
+			addChildAt(pInfoHUD, 10);
+
 			reset();
 
 			// load in XML information
@@ -50,6 +54,10 @@ package bear {
 			trace("All items magically hit!");
 			hitObjectManager.clearLevel(pLevel);
 			endLevel();
+		}
+
+		public function decreaseVolume():void {
+			soundManager.decreaseVolume();
 		}
 
 		// Shows the error frame
@@ -102,6 +110,10 @@ package bear {
 			pTimer.stop();
 		}
 
+		public function increaseVolume():void {
+			soundManager.increaseVolume();
+		}
+
 		// Initializes the game
 		public function initGame():void {
 
@@ -118,7 +130,11 @@ package bear {
 			// Record the time
 			beginningDate = new Date();
 
-			//
+			// Set up music stuff
+			musicmute_mc.gotoAndStop("high");
+			effectsmute_mc.gotoAndStop("high");
+			soundManager.startMusic();
+
 			gameTimer.start();
 			pLevel = 1;
 			score_bar.score = pScore;
@@ -156,6 +172,10 @@ package bear {
 		// Goes to instructions screen when done loading
 		public function instructions():void {
 			gotoAndStop("instructions");
+		}
+
+		public function newSong(theAlbum:String, theArtist:String, theSong:String):void {
+			pInfoHUD.showHUD(theAlbum, theArtist, theSong);
 		}
 
 		// Begins the next attempt
@@ -230,6 +250,14 @@ package bear {
 			hitObjectManager.reset();
 			soundManager.reset();
 			gotoAndStop("initgame");
+		}
+
+		public function toggleEffects():void {
+			soundManager.toggleSoundEffects();
+		}
+
+		public function toggleMusic():void {
+			soundManager.toggleMusic();
 		}
 
 		// Update the time wasted timer

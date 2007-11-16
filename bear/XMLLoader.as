@@ -72,6 +72,15 @@ package bear {
 
 			}
 
+			// Load music
+			trace("\nLoading music:");
+			for each (var xmlSong:XML in xmlData.soundtrack.*) {
+				var tempSong:Song = new Song();
+				tempSong.file = xmlSong.@file;
+				trace(tempSong.file);
+				soundManager.addSong(tempSong);
+			}
+
 			// finished - go to the instructions screen
 			docClass.instructions();
 

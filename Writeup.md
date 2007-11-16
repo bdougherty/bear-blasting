@@ -20,3 +20,13 @@ The `HitManager` is basically a dumb class, it is told what to do by the documen
 ## Level Designer
 
 I made a level designer to make it easier to add levels, since they are in the XML file. This way, I donʼt have to manually put in all of the X and Y positions of every salmon on the screen. The scaling doesnʼt work perfectly, but itʼs good enough. I designed 16 levels to go with the game for now, but more can be easily added to the XML file.
+
+## Project 3 Additions
+
+When I had written my game, I designed the sound manager in to make it easier to add sound later. All of the sound is controlled through the sound manager, with some methods in the document class so that certain things could talk to the sound manager.
+
+The sound currently loads right before it is needed. This causes an issue where the next song does not play right away.
+
+Because of restrictions with buttons, the mute "buttons" are actually movie clips so that I can change the speaker icon easier.
+
+The way that the sound effects are set up makes it a little difficult to control the volume. I have them just playing instead of using a sound channel, because the bear will frequently hit a salmon before the growl sound is done.

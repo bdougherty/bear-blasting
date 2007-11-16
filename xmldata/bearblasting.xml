@@ -99,4 +99,10 @@
 	    <item posx="110" posy="370" scale="1.0" />
 	    <item posx="390" posy="370" scale="1.0" />
 	</level>
+	<soundtrack>
+		<song file="music/Traffic.mp3" />
+		<song file="music/sbtechno.mp3" />
+		<song file="music/JustBe.mp3" />
+		<song file="music/Nyana.mp3" />
+	</soundtrack>
 </game>

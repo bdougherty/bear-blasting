@@ -56,7 +56,7 @@ package bear {
 			// Did we hit the right side?
 			else if (someBear.x >= BearBlastingApp.STAGE_WIDTH - (someBear.width / 2)) {
 				negX();
-				someBear.x = BearBlastingApp.STAGE_WIDTH - (someBear.width / 2) + 1;
+				someBear.x = BearBlastingApp.STAGE_WIDTH - (someBear.width / 2) - 1;
 			}
 			// What about the bottom?
 			if (someBear.y >= docClass.stage.stageHeight - (someBear.height / 2)) {
